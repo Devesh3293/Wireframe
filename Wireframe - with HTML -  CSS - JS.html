@@ -1,0 +1,311 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <link rel="icon" href="LOGO1-removebg-preview.png" type="image" sizes="16x16">
+<title>Music Shop- buy Guitars, drums and more</title>
+    <style>
+        * {
+            font-family: cursive;
+            font-weight: 300;
+        }
+        body, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+        p, li, h1, h2, h3, h4 {
+            color: darkslategray
+        }
+        body {
+            background-color: azure; 
+        }
+        .wrapper {
+            width: 96%;
+           max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2%;
+        }
+        header {
+            background-color: sandybrown;
+            padding: 10px 0; 
+        }
+        .logo {
+            margin: 0;
+            background: url(LOGO1-removebg-preview.png);
+            background-size: 70px 70px;
+            float:left;
+            width: 70px;
+            height: 70px;
+        }
+        header nav {
+            float: right;
+        }
+        header:after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        header nav li {
+            list-style-type: none;
+            float: left;
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        header nav li a {
+            text-decoration: none;
+            color: darkslategray;
+            font-size: 15px;
+            text-transform: uppercase;
+        }
+        #main-banner {
+            width: 100%;
+            max-height: 500px;
+            overflow: hidden;
+        }
+        #main-banner img {
+            width: 100%;
+        }
+        #slider {
+            overflow: hidden;
+        }
+        #slides {
+            position: relative;
+            width: 500%;
+            margin: 0;
+            left: 0;
+            text-align: left;
+            font-size: 0;
+            animation: 18s slidy infinite; 
+        }
+        #slides img {
+           width: 20%;
+            float: left;
+        }
+        #usp {
+            margin-top: 60px;
+        }
+        #usp li {
+            float: left;
+            width: 23%;
+            padding: 1%;
+            text-align: center;
+            list-style-type: none;
+        }
+        #usp li img {
+            height: 80px;
+            padding: 20px;
+            background-color: aqua;
+            border-radius: 50%;
+        }
+        #usp li h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+        #usp:after {
+            content: "";
+            display: block;
+            clear:both;
+        }
+        #products {
+            padding-top: 30px;
+            margin-top: 30px;
+            border-top: 2px solid lightgrey;
+        }
+        #products li {
+            float: left;
+            width: 32%;
+            list-style-type: none;
+            text-align: center;
+        }
+        #products li img {
+            width: 100%;
+        }
+        #products li:nth-child(even) {
+            margin: 0 1%;
+        }
+        footer {
+            width: 100%;
+            background-color: darkslategrey;
+            padding: 30px 0;
+            margin-top: 60px;
+        }
+        footer ul {
+            float: left;
+            width: 48%;
+            margin: 1%;
+        }
+        footer ul h3 {
+            font-size: 30px;
+            color: azure;
+        }
+        footer ul li {
+            list-style-type: none;
+            font-size: 15px;
+            color: azure;
+        }
+        /* Clearfix Hack */
+        footer:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        /* Animation */
+        @keyframes slidy {
+            0%{ left: 0%; }
+            28%{ left: 0%; }
+            33%{ left: -100%; }
+            61%{ left: -100%; }
+            66%{ left: -200%; }
+            94%{ left: -200%; }
+            100%{ left: 0%; }
+        }
+        #products:after {
+           content: "";
+            display: block;
+            clear: both;
+        }
+        #our-products {
+            text-align: center;
+        }
+        .greet{
+            background-color: #49C9B0;
+            font-family: fantasy;
+            color: white;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="myfunction()">
+    <!-- Header Starts -->
+    <header>
+        <div class="wrapper">
+        <div class="logo"></div>
+        <nav>
+            <div class="menu"></div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <!-- Header Ends -->
+    
+    <!-- Greet section Starts -->
+    <div class="greet">
+        <p id="namesec"></p>
+    </div>
+    <!-- Greet section Ends -->
+        
+    <!-- Banner -->
+        <div id="main-banner">
+            <div id="slider">
+                <div id="slides">
+                    <img src="python.png" alt="banner">
+                    <img src="python_coding.png" alt="banner">
+                    <img src="python_coding2.png" alt="banner">
+                </div>
+        </div>
+</div>
+    <!-- Banner ends -->
+    
+    <!-- USP section starts -->
+    <div class="wrapper">
+        <section id="usp">
+            <ul>
+                <li><img src="Product.png">
+                <h2>Wide Range of products</h2>
+                </li>
+                <li>
+                    <img src="Store.png">
+                    <h2>Multiple Stores</h2>
+                </li>
+                <li>
+                    <img src="happiness.png">
+                    <h2>Happy Customers</h2>
+                </li>
+                <li>
+                    <img src="user.png">
+                    <h2>Satisfaction Guaranteed</h2>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- USP section ends -->
+    
+    <!-- Product Starts -->
+    <div class="wrapper">
+        <section id="products">
+            <h2 id="our-products">Our Products</h2>
+            <ul>
+                <li>
+                    <img src="guitar.png">
+                    <h2>Acooustic Guitar</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar metus eu maximus varius. Vivamus felis velit, dignissim eget ultrices eu, vulputate sit amet nisi. Suspendisse eget leo at tortor varius elementum. Vestibulum tincidunt sed eros ut sodales. Duis sodales ligula commodo lectus varius, ac condimentum nulla pharetra. </p>
+                </li>
+                <li>
+                    <img src="drums-31362_1280.png">
+                    <h2>Drums</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar metus eu maximus varius. Vivamus felis velit, dignissim eget ultrices eu, vulputate sit amet nisi. Suspendisse eget leo at tortor varius elementum. Vestibulum tincidunt sed eros ut sodales. Duis sodales ligula commodo lectus varius, ac condimentum nulla pharetra. </p>
+                </li>
+                <li>
+                    <img src="grand-piano-161447_1280.png">
+                    <h2>Piano</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam pulvinar metus eu maximus varius. Vivamus felis velit, dignissim eget ultrices eu, vulputate sit amet nisi. Suspendisse eget leo at tortor varius elementum. Vestibulum tincidunt sed eros ut sodales. Duis sodales ligula commodo lectus varius, ac condimentum nulla pharetra. </p>
+                </li>
+            </ul>
+        </section>
+    </div>
+    <!-- Product ends -->
+    
+    <!-- Footer starts -->
+    <footer>
+        <div class="wrapper">
+            <ul>
+                <h3>Get in Touch</h3>
+                <li>Manny's Music Shop - Delhi, India</li>
+                <li>Address: XYZ Avenue, 456-654</li>
+                <li>Call today - +986553xxx</li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yoHIfLG1mKU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </footer>
+    <!-- Footer Ends -->
+    
+    <!-- JS Codes -->
+    <script>
+        
+        function myfunction(){
+            var name=prompt("Hello user, What is your name?", "doe");
+            var bg=prompt("What is your favourite color?", "aqua")
+            
+            var msg;
+            var date= new Date();
+            var hour=date.getHours();
+            
+            if (hour<12){
+                msg="Hello "+name+" Good Morning";
+                document.getElementById("namesec").innerHTML=msg;
+            }
+            else if (hour>12 && hour<16){
+                msg="Hello "+name+" Good Afternoon";
+                document.getElementById("namesec").innerHTML=msg;
+            }
+            else if (hour>16 && hour<23){
+                msg="Hello "+name+" Good Evening";
+                document.getElementById("namesec").innerHTML=msg;
+            }
+            else{
+                msg="Greetings Of The Day";
+                document.getElementById("namesec").innerHTML=msg;
+            }
+            
+            document.body.style.backgroundColor=bg;
+        }
+    </script>
+    <!-- End of JS codes -->
+</body>
+</html>
